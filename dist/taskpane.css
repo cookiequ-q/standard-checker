@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  color: #333;
+  background: #f9f9f9;
+  padding: 16px;
+}
+
+#app {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.status-bar {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #1a6fb5;
+}
+
+.status-bar.error {
+  background: #fde8e8;
+  border-color: #f2b3b3;
+  color: #b51a1a;
+}
+
+.hidden {
+  display: none;
+}
+
+.progress-bar {
+  height: 4px;
+  background: #e0e0e0;
+  border-radius: 2px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #0078d4;
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #0078d4;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #106ebe;
+}
+
+.btn-secondary {
+  background: #e1e1e1;
+  color: #333;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: #d1d1d1;
+}
+
+.results-summary {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.badge-red { background: #fde8e8; color: #c41e3a; }
+.badge-yellow { background: #fff8e1; color: #b8860b; }
+.badge-green { background: #e8f5e9; color: #2e7d32; }
+.badge-blue { background: #e3f2fd; color: #1565c0; }
+.badge-ok { background: #f5f5f5; color: #888; }
+
+.results-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.result-item {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-left: 4px solid #ccc;
+}
+
+.result-item.level-red { border-left-color: #c41e3a; }
+.result-item.level-yellow { border-left-color: #f0ad4e; }
+.result-item.level-green { border-left-color: #5cb85c; }
+.result-item.level-blue { border-left-color: #1565c0; }
+.result-item.level-ok { border-left-color: #ccc; }
+
+.result-item .code {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.result-item .message {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.result-item .suggestion {
+  font-size: 12px;
+  color: #0078d4;
+  margin-top: 4px;
+}
+
+.update-info {
+  text-align: center;
+  margin-top: 16px;
+  color: #aaa;
+}

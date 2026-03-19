@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "code": "GB 50160-1992",
+    "name": "石油化工企业设计防火规范",
+    "name_en": "Fire prevention code of petro Chemical enterprise design",
+    "status": "已作废",
+    "publish_date": "1992-08-10",
+    "implement_date": "1992-12-01",
+    "abolish_date": "2009-07-01",
+    "replacement": "被GB 50160-2008代替",
+    "replacement_code": "GB 50160-2008",
+    "authority": "中国石油化工总公司",
+    "ccs_class": ">>>>P7  工程建设>>工程抗震、工程防火、人防工程>>P16工程防火",
+    "ics_class": "",
+    "category": "GB",
+    "detail_url": "/detail/20454.html",
+    "crawled_at": "2026-03-16 06:05:49",
+    "raw_json": "{\"name\":\"石油化工企业设计防火规范\",\"code\":\"GB 50160-1992\",\"status\":\"已作废\",\"nameEn\":\"Fire prevention code of petro Chemical enterprise design\",\"replacement\":\"被GB 50160-2008代替\",\"replacementCode\":\"GB 50160-2008\",\"replacementUrl\":\"/detail/196743.html\",\"ccsClass\":\">>>>P7  工程建设>>工程抗震、工程防火、人防工程>>P16工程防火\",\"publishDate\":\"1992-08-10\",\"implementDate\":\"1992-12-01\",\"abolishDate\":\"2009-07-01\",\"authority\":\"中国石油化工总公司\",\"detailUrl\":\"/detail/20454.html\",\"category\":\"GB\"}"
+  },
+  {
+    "id": 2,
+    "code": "GB 50160-2008",
+    "name": "石油化工企业设计防火标准(2018年版)",
+    "name_en": "Fire prevention code of petrochemical enterprise design",
+    "status": "现行",
+    "publish_date": "2008-12-30",
+    "implement_date": "2009-07-01",
+    "abolish_date": "",
+    "replacement": "替代GB 50160-1992(1999年版)",
+    "replacement_code": "GB 50160-1992",
+    "authority": "",
+    "ccs_class": ">>>>P7  工程建设>>工程抗震、工程防火、人防工程>>P16工程防火",
+    "ics_class": "",
+    "category": "GB",
+    "detail_url": "/detail/196743.html",
+    "crawled_at": "2026-03-16 06:05:52",
+    "raw_json": "{\"name\":\"石油化工企业设计防火标准(2018年版)\",\"code\":\"GB 50160-2008\",\"status\":\"现行\",\"nameEn\":\"Fire prevention code of petrochemical enterprise design\",\"replacement\":\"替代GB 50160-1992(1999年版)\",\"replacementCode\":\"GB 50160-1992\",\"replacementUrl\":\"/detail/20454.html\",\"ccsClass\":\">>>>P7  工程建设>>工程抗震、工程防火、人防工程>>P16工程防火\",\"publishDate\":\"2008-12-30\",\"implementDate\":\"2009-07-01\",\"detailUrl\":\"/detail/196743.html\",\"category\":\"GB\"}"
+  }
+]
