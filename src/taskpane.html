@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <title>Standard Checker</title>
+  <link rel="stylesheet" href="taskpane.css"/>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>标准法规检查</h1>
+      <p class="subtitle">化工设计标准规范纠错工具</p>
+    </header>
+
+    <div id="status-bar" class="status-bar">
+      <span id="status-text">初始化中...</span>
+    </div>
+
+    <div id="debug-info" style="font-size:11px;color:#888;padding:4px 12px;"></div>
+
+    <div id="progress-bar" class="progress-bar hidden">
+      <div id="progress-fill" class="progress-fill"></div>
+    </div>
+
+    <div class="actions">
+      <button id="btn-scan" class="btn btn-primary" disabled onclick="scanDocument()">
+        开始检查
+      </button>
+      <button id="btn-clear" class="btn btn-secondary" onclick="clearHighlights()">
+        清除标记
+      </button>
+    </div>
+
+    <div id="results" class="results hidden">
+      <div class="results-summary">
+        <span class="badge badge-red" id="count-red" title="已废止/被代替">0</span>
+        <span class="badge badge-yellow" id="count-yellow" title="即将到期">0</span>
+        <span class="badge badge-green" id="count-green" title="格式问题">0</span>
+        <span class="badge badge-blue" id="count-blue" title="未生效">0</span>
+        <span class="badge badge-ok" id="count-ok" title="正常">0</span>
+      </div>
+      <div id="results-list" class="results-list"></div>
+    </div>
+  </div>
+
+  <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js" async></script>
+  <script>
+    // 如果 Office.js 加载超时，3秒后强制初始化
+    window._officeReady = false;
+    setTimeout(function() {
+      if (!window._officeReady) {
+        var btn = document.getElementById('btn-scan');
+        var st = document.getElementById('status-text');
+        if (btn) btn.disabled = false;
+        if (st) st.textContent = '就绪（离线模式）';
+      }
+    }, 3000);
+  </script>
+  <script src="taskpane.js"></script>
+</body>
+</html>
